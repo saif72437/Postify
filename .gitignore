@@ -1,0 +1,64 @@
+# =========================
+# Global
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Frontend (fe)
+# =========================
+fe/node_modules/
+fe/dist/
+fe/build/
+fe/.env
+fe/.env.*
+
+# Vite
+fe/.vite/
+
+# Next.js (if used)
+fe/.next/
+fe/out/
+
+# =========================
+# Backend (be)
+# =========================
+be/node_modules/
+be/.env
+be/.env.*
+be/logs/
+be/*.log
+
+# Uploads / temp files
+be/uploads/
+be/tmp/
+
+# =========================
+# Testing / Coverage
+# =========================
+coverage/
+*.lcov
+
+# =========================
+# Misc
+# =========================
+*.pem
+*.key
