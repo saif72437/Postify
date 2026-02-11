@@ -8,7 +8,7 @@ const likeSchema = new Schema({
     },
      user:{
         type: Schema.Types.ObjectId,
-        ref: "like",
+        ref: "User",
         required: true
     },
 }, {timestamps: true})
