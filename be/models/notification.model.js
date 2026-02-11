@@ -1,5 +1,4 @@
-import { model, Schema } from "mongoose";
-
+import  { model, Schema } from "mongoose";
 const notificationSchema = new Schema({
     sender:{
             type: Schema.Types.ObjectId,
