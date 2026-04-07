@@ -1,11 +1,12 @@
 import { Router } from "express";
-import { login } from "../controllers/user.contoller.js";
+import { getFollowers, getFollowing, getUser, getUserBySearch, updateUser } from "../controllers/user.controller.js";
 
 const userRouter = Router()
 
-
-userRouter.get("/login", login)
-// userRouter.post("/logout", )
-// userRouter.post("/signup", )
+userRouter.get("/:id", getUser);
+userRouter.put("/:id", updateUser);
+userRouter.get("/search", getUserBySearch);
+userRouter.get("/:id/followers", getFollowers);
+userRouter.get("/:id/following", getFollowing);
 
 export default userRouter;
